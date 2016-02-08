@@ -8,8 +8,14 @@
 #' See the DESCRIPTION:\cr
 #' \code{help(package = cointReg)}
 #'
+#' See the README:\cr
+#' \url{https://github.com/aschersleben/cointReg/README.md}
+#'
 #' Open the package documentation page:\cr
 #' \code{package?cointReg}
+#'
+#' Further information and bug reporting:\cr
+#' \url{https://github.com/aschersleben/cointReg}
 #'
 #' @section Functions:
 #' \itemize{

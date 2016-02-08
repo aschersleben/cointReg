@@ -34,6 +34,8 @@ Description: Cointegration methods are widely used in empirical macroeconomics
     with all three modified OLS approaches. That includes the automatic
     bandwidth selection approaches of Andrews (1991) and of Newey and West
     (1994) as well as the calculation of the long run variance.
+URL: https://github.com/aschersleben/cointReg
+BugReports: https://github.com/aschersleben/cointReg/issues
 License: GPL-3
 Imports:
     checkmate (>= 1.6.0),
