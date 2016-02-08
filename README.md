@@ -19,8 +19,10 @@ print(test)
 plot(test)
 ```
 
-* [Package vignette](https://github.com/aschersleben/cointReg/vignettes/cointReg.Rmd):
-Provides further examples and explanations.
+* Package vignette: Provides further examples and explanations.
+```r
+vignette("cointReg")
+```
 
 * Package help page: Overview of all available functions:
 ``` r
