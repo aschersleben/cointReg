@@ -3,3 +3,4 @@
 ^NEWS\.md$
 \.git
 \.gitignore
+^\.travis\.yml$
