@@ -111,13 +111,10 @@ checkVars <- function(..., out = "assign", .env) {
 #'   \item{\code{"model"}:}{
 #'   One of \code{c("FM", "D", "IM")}.}
 #'
-#'   \item{\code{"trend"}:}{
-#'   One of \code{c("level", "trend")}.}
-#'
 #'   \item{\code{"signif.level"}:}{
 #'   Of type \code{numeric(1)}, has to be in the interval [0.01, 0.1].}
 #'
-#'   \item{\code{"return.stats"}, \code{"return.input"},
+#'   \item{\code{"trend"}, \code{"return.stats"}, \code{"return.input"},
 #'         \code{"demeaning"}, \code{"t.test"}:}{
 #'   Converted to object: \code{logical(1)}.}
 #'
@@ -187,7 +184,6 @@ checkObject <- function(obj, obj.name, ..., out = "return", .env) {
   bk <- c("ba", "bo", "da", "pa", "qs", "th", "tr")
   bd <- c("and", "nw")
   mod <- c("FM", "D", "IM")
-  trend <- c("level", "trend")
   sel <- c(1, 2)
 
   ### check "obj.name" for possible arguments
@@ -254,12 +250,6 @@ checkObject <- function(obj, obj.name, ..., out = "return", .env) {
     tmp <- match.arg(obj, mod)
   }
 
-  ### check "trend"
-
-  if (obj.name == "trend") {
-    tmp <- match.arg(tolower(obj[1]), trend)
-  }
-
   ### check "signif.level"
 
   if (obj.name == "signif.level") {
@@ -287,7 +277,8 @@ checkObject <- function(obj, obj.name, ..., out = "return", .env) {
   ### check "demeaning", "return.stats", "return.input", "t.test"
 
   if (obj.name == "demeaning" || obj.name == "return.stats" ||
-      obj.name == "return.input" || obj.name == "t.test") {
+      obj.name == "return.input" || obj.name == "t.test" ||
+      obj.name == "trend") {
     tmp <- as.logical(obj)
     assert(checkFlag(tmp), .var.name = obj.name)
   }

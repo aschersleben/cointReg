@@ -57,13 +57,10 @@ Possible values of \code{obj.name} to check:
   \item{\code{"model"}:}{
   One of \code{c("FM", "D", "IM")}.}
 
-  \item{\code{"trend"}:}{
-  One of \code{c("level", "trend")}.}
-
   \item{\code{"signif.level"}:}{
   Of type \code{numeric(1)}, has to be in the interval [0.01, 0.1].}
 
-  \item{\code{"return.stats"}, \code{"return.input"},
+  \item{\code{"trend"}, \code{"return.stats"}, \code{"return.input"},
         \code{"demeaning"}, \code{"t.test"}:}{
   Converted to object: \code{logical(1)}.}
 
