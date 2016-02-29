@@ -18,7 +18,7 @@ knitr::opts_chunk$set(fig.path = "figures/vignette-", fig.width = 5, message = F
 
 ## Install cointReg
 
-Install the development version of the package:
+Since it's not available on CRAN yet, you have to download and install the package directly from GitHub:
 ```{R, eval = FALSE}
 devtools::install_github("aschersleben/cointReg", build_vignettes = TRUE)
 ```
