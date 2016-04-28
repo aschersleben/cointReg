@@ -146,11 +146,11 @@ print(test2)
 
 }
 \seealso{
+Other D-OLS: \code{\link{getLeadLag}},
+  \code{\link{getModD}}, \code{\link{makeLeadLagMatrix}}
+
 Other cointReg: \code{\link{cointRegFM}},
   \code{\link{cointRegIM}}, \code{\link{cointReg}},
   \code{\link{plot.cointReg}}, \code{\link{print.cointReg}}
-
-Other D-OLS: \code{\link{getLeadLag}},
-  \code{\link{getModD}}, \code{\link{makeLeadLagMatrix}}
 }
 
