@@ -165,12 +165,12 @@ cointRegIM <- function(x, y, deter, selector = 1, t.test = TRUE,
   x.k <- ncol(x)
   d.k <- ncol(deter)
 
-  Sy <- colCumsums(y)
-  Sx <- colCumsums(x)
+  Sy <- matrixStats::colCumsums(y)
+  Sx <- matrixStats::colCumsums(x)
   if (d.k == 0) {
     Sd <- deter
   } else {
-    Sd <- colCumsums(deter)
+    Sd <- matrixStats::colCumsums(deter)
     if (!is.null(colnames(deter))) {
       colnames(Sd) <- paste0("S.", colnames(deter))
     } else {
@@ -210,9 +210,9 @@ cointRegIM <- function(x, y, deter, selector = 1, t.test = TRUE,
   if (2 %in% selector) {
     Sxrow <- nrow(Sx)
     InvBase <- Sx[Sxrow:1, , drop = FALSE]
-    InvBaseCum <- colCumsums(InvBase)
+    InvBaseCum <- matrixStats::colCumsums(InvBase)
     RevBase <- InvBaseCum[Sxrow:1, , drop = FALSE]
-    Zreg <- colCumsums(RevBase)
+    Zreg <- matrixStats::colCumsums(RevBase)
     colnames(Zreg) <- make.unique(rep("Z", x.k))
 
     X2 <- data.frame(X, Zreg)
@@ -230,7 +230,7 @@ cointRegIM <- function(x, y, deter, selector = 1, t.test = TRUE,
   }
 
   # VCV estimation
-  S <- colCumsums(Xmat)
+  S <- matrixStats::colCumsums(Xmat)
   DS <- rbind(S[y.T, ], t(S[y.T, ] - t(S[1:(y.T - 1), ])))
   Ha <- trySolve(t(Xmat) %*% Xmat)
   H <- Ha %*% t(DS)
