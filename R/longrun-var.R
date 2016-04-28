@@ -91,7 +91,7 @@ getLongRunVar <- function(u, bandwidth = c("and", "nw"),
     matj <- t(u[(j + 1):u.T, , drop = FALSE]) %*%
       u[1:(u.T - j), , drop = FALSE] / u.T
     Omega <- Omega + w[j] * (matj + t(matj))
-    Delta <- Delta + w[j] * matj
+    Delta <- Delta + w[j] * t(matj)
   }
 
   return(list(Omega = Omega, Delta = Delta, Sigma = Sigma))
