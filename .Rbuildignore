@@ -2,7 +2,5 @@
 ^\.Rproj\.user$
 \.git
 \.gitignore
-^README\.md$
-^NEWS\.md$
 ^\.travis\.yml$
 ^cran-comments\.md$
