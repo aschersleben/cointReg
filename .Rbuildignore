@@ -1,6 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^NEWS\.md$
 \.git
 \.gitignore
 ^\.travis\.yml$
+^cran-comments\.md$

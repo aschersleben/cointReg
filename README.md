@@ -3,15 +3,16 @@
 Parameter Estimation and Inference in a Cointegrating Regression
 
 [![Travis-CI Build Status](https://travis-ci.org/aschersleben/cointReg.svg?branch=master)](https://travis-ci.org/aschersleben/cointReg)
+[![CRAN Status Badge](http://www.r-pkg.org/badges/version/cointReg)](https://cran.r-project.org/web/packages/cointReg)
 
 * Installation:
-``` r
+```r
 devtools::install_github("aschersleben/cointReg", build_vignettes = TRUE)
 library("cointReg")
 ```
 
 * Simple example:
-``` r
+```r
 set.seed(1909)
 x <- cumsum(rnorm(200, mean = 0, sd = 0.1)) + 10
 y <- x + rnorm(200, sd = 0.4) + 2
@@ -27,7 +28,7 @@ vignette("cointReg")
 ```
 
 * Package help page: Overview of all available functions:
-``` r
+```r
 package?cointReg
 ```
 
