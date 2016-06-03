@@ -1,3 +1,6 @@
+#' @importFrom graphics plot.default
+#' @importFrom stats lm
+#' @importFrom stats pt
 #' @import checkmate
 #' @importFrom matrixStats colCumsums
 #' @importFrom matrixStats colDiffs
@@ -12,6 +15,7 @@ trySolve <- function(x) {
 }
 
 .onAttach <- function(libname, pkgname) {
-  psm = "Parameter Estimation and Inference in a Cointegrating Regression."
+  psm = paste("cointReg: Parameter Estimation and Inference in a",
+              "Cointegrating Regression.")
   packageStartupMessage(psm)
 }
