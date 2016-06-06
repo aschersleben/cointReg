@@ -61,6 +61,29 @@ res = sapply(c("FM", "D", "IM"), cointReg, x = x, y = y, deter = deter)
 do.call(cbind, lapply(res, "[[", "theta"))
 
 }
+\references{
+\itemize{
+    \item Phillips, P.C.B. and B. Hansen (1990): "Statistical Inference in
+          Instrumental Variables Regression with I(1) Processes,"
+          \emph{Review of Economic Studies}, 57, 99--125,
+          \href{http://dx.doi.org/10.2307/2297545}{DOI:10.2307/2297545}.
+    \item Phillips, P.C.B. and M. Loretan (1991): "Estimating Long Run
+          Economic Equilibria," \emph{Review of Economic Studies}, 58,
+          407--436,
+          \href{http://dx.doi.org/10.2307/2298004}{DOI:10.2307/2298004}.
+    \item Saikkonen, P. (1991): "Asymptotically Efficient Estimation of
+          Cointegrating Regressions," \emph{Econometric Theory}, 7, 1--21,
+          \href{http://dx.doi.org/10.1017/S0266466600004217}{DOI:10.1017/S0266466600004217}.
+    \item Stock, J.H. and M.W. Watson (1993): "A Simple Estimator of
+          Cointegrating Vectors in Higher Order Integrated Systems,"
+          \emph{Econometrica}, 61, 783--820,
+          \href{http://dx.doi.org/10.2307/2951763}{DOI:10.2307/2951763}.
+    \item Vogelsang, T.J. and M. Wagner (2014): "Integrated Modified OLS
+          Estimation and Fixed-b Inference for Cointegrating Regressions,"
+          \emph{Journal of Econometrics}, 148, 741--760,
+          \href{http://dx.doi.org/10.1016/j.jeconom.2013.10.015}{DOI:10.1016/j.jeconom.2013.10.015}.
+  }
+}
 \seealso{
 Other cointReg: \code{\link{cointRegD}},
   \code{\link{cointRegFM}}, \code{\link{cointRegIM}},

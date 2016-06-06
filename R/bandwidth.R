@@ -43,6 +43,16 @@
 #' @seealso \code{\link{getLongRunVar}}
 #' @family bandwidth
 #'
+#' @references
+#'   \itemize{
+#'     \item Andrews, D.W.K. (1991): "Heteroskedasticity and Autocorrelation
+#'     Consistent Covariance Matrix Estimation," \emph{Econometrica}, 59,
+#'     817--854, \href{http://dx.doi.org/10.2307/2938229}{DOI:10.2307/2938229}.
+#'     \item Newey, W.K. and K.D. West (1994): "Automatic Lag Selection in
+#'     Covariance Matrix Estimation", \emph{Review of Economic Studies}, 61,
+#'     631--653, \href{http://dx.doi.org/10.2307/2297912}{DOI:10.2307/2297912}.
+#'   }
+#'
 #' @examples
 #' set.seed(1909)
 #' x <- rnorm(100)

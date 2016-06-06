@@ -94,6 +94,14 @@
 #'
 #' @family cointReg
 #'
+#' @references
+#'   \itemize{
+#'     \item Phillips, P.C.B. and B. Hansen (1990): "Statistical Inference in
+#'           Instrumental Variables Regression with I(1) Processes,"
+#'           \emph{Review of Economic Studies}, 57, 99--125,
+#'           \href{http://dx.doi.org/10.2307/2297545}{DOI:10.2307/2297545}.
+#'   }
+#'
 #' @examples
 #' set.seed(1909)
 #' x1 = cumsum(rnorm(100, mean = 0.05, sd = 0.1))

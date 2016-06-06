@@ -145,6 +145,21 @@ test2 <- cointRegD(x, y, deter, kmax = "k4", info.crit = "BIC",
 print(test2)
 
 }
+\references{
+\itemize{
+    \item Phillips, P.C.B. and M. Loretan (1991): "Estimating Long Run
+          Economic Equilibria," \emph{Review of Economic Studies}, 58,
+          407--436,
+          \href{http://dx.doi.org/10.2307/2298004}{DOI:10.2307/2298004}.
+    \item Saikkonen, P. (1991): "Asymptotically Efficient Estimation of
+          Cointegrating Regressions," \emph{Econometric Theory}, 7, 1--21,
+          \href{http://dx.doi.org/10.1017/S0266466600004217}{DOI:10.1017/S0266466600004217}.
+    \item Stock, J.H. and M.W. Watson (1993): "A Simple Estimator of
+          Cointegrating Vectors in Higher Order Integrated Systems,"
+          \emph{Econometrica}, 61, 783--820,
+          \href{http://dx.doi.org/10.2307/2951763}{DOI:10.2307/2951763}.
+  }
+}
 \seealso{
 Other D-OLS: \code{\link{getLeadLag}},
   \code{\link{getModD}}, \code{\link{makeLeadLagMatrix}}

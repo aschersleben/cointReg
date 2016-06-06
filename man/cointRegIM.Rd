@@ -156,6 +156,14 @@ test = cointRegIM(x, y, deter, selector = c(1, 2), t.test = TRUE,
 print(test)
 
 }
+\references{
+\itemize{
+    \item Vogelsang, T.J. and M. Wagner (2014): "Integrated Modified OLS
+          Estimation and Fixed-b Inference for Cointegrating Regressions,"
+          \emph{Journal of Econometrics}, 148, 741--760,
+          \href{http://dx.doi.org/10.1016/j.jeconom.2013.10.015}{DOI:10.1016/j.jeconom.2013.10.015}.
+  }
+}
 \seealso{
 Other cointReg: \code{\link{cointRegD}},
   \code{\link{cointRegFM}}, \code{\link{cointReg}},

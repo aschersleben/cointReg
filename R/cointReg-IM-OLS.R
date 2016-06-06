@@ -117,6 +117,14 @@
 #'
 #' @family cointReg
 #'
+#' @references
+#'   \itemize{
+#'     \item Vogelsang, T.J. and M. Wagner (2014): "Integrated Modified OLS
+#'           Estimation and Fixed-b Inference for Cointegrating Regressions,"
+#'           \emph{Journal of Econometrics}, 148, 741--760,
+#'           \href{http://dx.doi.org/10.1016/j.jeconom.2013.10.015}{DOI:10.1016/j.jeconom.2013.10.015}.
+#'   }
+#'
 #' @examples
 #' set.seed(1909)
 #' x1 = cumsum(rnorm(100, mean = 0.05, sd = 0.1))

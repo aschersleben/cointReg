@@ -114,6 +114,14 @@ test = cointRegFM(x, y, deter, kernel = "ba", bandwidth = "and")
 print(test)
 
 }
+\references{
+\itemize{
+    \item Phillips, P.C.B. and B. Hansen (1990): "Statistical Inference in
+          Instrumental Variables Regression with I(1) Processes,"
+          \emph{Review of Economic Studies}, 57, 99--125,
+          \href{http://dx.doi.org/10.2307/2297545}{DOI:10.2307/2297545}.
+  }
+}
 \seealso{
 Other cointReg: \code{\link{cointRegD}},
   \code{\link{cointRegIM}}, \code{\link{cointReg}},

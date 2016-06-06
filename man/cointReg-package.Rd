@@ -15,7 +15,7 @@ See the DESCRIPTION:\cr
 \code{help(package = cointReg)}
 
 See the README:\cr
-\url{https://github.com/aschersleben/cointReg/blob/master/inst/README.md}
+\url{https://github.com/aschersleben/cointReg/blob/master/README.md}
 
 Open the package documentation page:\cr
 \code{package?cointReg}
