@@ -21,20 +21,13 @@
 #' \itemize{
 #'   \item \code{\link{cointReg}(method = c("FM", "D", "IM"), ...)}\cr
 #'         General function to estimate parameters of
-#'         the given model. Three methods are possible: FM-OLS, D-OLS and
-#'         IM-OLS; they can be directly choosen by using one of the following
+#'         the given model. Three methods are possible;
+#'         they can be choosen directly by using one of the following
 #'         functions:
 #'   \itemize{
-#'     \item \code{\link{cointRegFM}(x, y, deter,
-#'           kernel = c("ba", "pa", "qs", "tr"), bandwidth = c("and", "nw"),
-#'           demeaning = FALSE, check = TRUE, ...)}
-#'     \item \code{\link{cointRegD}(x, y, deter,
-#'           kernel = c("ba", "pa", "qs", "tr"), bandwidth = c("and", "nw"),
-#'           n.lead = NULL, n.lag = NULL, kmax = c("k4", "k12"),
-#'           info.crit = c("AIC", "BIC"), demeaning = FALSE, check = TRUE, ...)}
-#'     \item \code{\link{cointRegIM}(x, y, deter, selector = 1, t.test = TRUE,
-#'           kernel = c("ba", "pa", "qs", "tr"), bandwidth = c("and", "nw"),
-#'           check = TRUE, ...)}
+#'     \item \code{\link{cointRegFM}}: Fully Modified OLS
+#'     \item \code{\link{cointRegD}}: Dynamic OLS
+#'     \item \code{\link{cointRegIM}}: Integrated Modified OLS
 #'   }
 #'   \item \code{\link[=print.cointReg]{print}}\cr
 #'         Print clear results.

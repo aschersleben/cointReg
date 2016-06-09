@@ -12,13 +12,19 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 ```{R, include = FALSE}
-knitr::opts_chunk$set(fig.path = "figures/vignette-", fig.width = 5, message = FALSE)
+knitr::opts_chunk$set(fig.path = "figures/vignette-", fig.width = 5,
+                      message = FALSE)
 ```
 
 
 ## Install cointReg
 
-Since it's not available on CRAN yet, you have to download and install the package directly from GitHub:
+```{R, eval = FALSE}
+install.packages("cointReg")
+```
+
+If you like to use the development version, you can install the package directly
+from GitHub:
 ```{R, eval = FALSE}
 devtools::install_github("aschersleben/cointReg", build_vignettes = TRUE)
 ```
