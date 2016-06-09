@@ -165,7 +165,7 @@ cointRegFM <- function(x, y, deter, kernel = c("ba", "pa", "qs", "tr"),
   } else {
     u.4var <- u.ols[-1]
   }
-  x.delta <- colDiffs(x)
+  x.delta <- matrixStats::colDiffs(x)
   u <- cbind(u.4var, x.delta)
 
   if (!is.numeric(bandwidth)) {
