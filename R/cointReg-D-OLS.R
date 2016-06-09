@@ -222,7 +222,7 @@ cointRegD <- function(x, y, deter, kernel = c("ba", "pa", "qs", "tr"),
     out[["all"]] <- x
     out[["uu"]] <- x[1:y.k, 1:y.k, drop = FALSE]
     out[["uv"]] <- x[1:y.k, (y.k + 1):(y.k + x.k), drop = FALSE]
-    out[["vu"]] <- t(out[["uv"]])
+    out[["vu"]] <- x[(y.k + 1):(y.k + x.k), 1:y.k, drop = FALSE]
     out[["vv"]] <- x[(y.k + 1):(y.k + x.k), (y.k + 1):(y.k + x.k), drop = FALSE]
     return(out)
   })
