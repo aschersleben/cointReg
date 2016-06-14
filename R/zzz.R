@@ -15,7 +15,8 @@ trySolve <- function(x) {
 }
 
 .onAttach <- function(libname, pkgname) {
-  psm = paste("cointReg: Parameter Estimation and Inference in a",
+  psm = paste("cointReg", paste0("(v", packageVersion("cointReg"), "):"),
+              "Parameter Estimation and Inference in a",
               "Cointegrating Regression.")
   packageStartupMessage(psm)
 }
