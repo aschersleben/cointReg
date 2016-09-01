@@ -13,7 +13,9 @@
 #'   auxiliary regressors). Default is \code{FALSE}.
 #'
 #' @return
-#'   The invisible \code{x} object.
+#'   [\code{matrix}]\cr
+#'   A matrix including the coefficients along with standard errors,
+#'   t and p values.
 #'
 #' @family cointReg
 #'
@@ -32,6 +34,11 @@
 #'
 #' test.im2 = cointRegIM(x = x, y = y, deter = deter)
 #' print(test.im2)
+#'
+#' # The coefficients matrix can be transferred e.g. to LaTeX via xtable:
+#' if (!require("xtable")) {install.packages("xtable"); library("xtable")}
+#' xtab = xtable(print(test.fm))
+#' print.xtable(xtab)
 #'
 #' @export
 
@@ -76,11 +83,10 @@ print.cointReg <- function(x, ..., digits = getOption("digits"),
     }
     tab <- cbind(Estimate = estim, Std.Err = sd, "t value" = tval,
                  "Pr(|t|>0)" = pval)
-    stats::printCoefmat(tab)
+    return(stats::printCoefmat(tab))
   } else {
-    print.default(format(drop(x$theta), digits = digits), print.gap = 2L,
-                  quote = FALSE)
+    out <- drop(x$theta)
+    print.default(format(out, digits = digits), print.gap = 2L, quote = FALSE)
+    return(out)
   }
-
-  return(invisible(x))
 }

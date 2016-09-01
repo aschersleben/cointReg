@@ -22,7 +22,9 @@ Whether to show all coefficients (i. e. the "real" regressors AND the
 auxiliary regressors). Default is \code{FALSE}.}
 }
 \value{
-The invisible \code{x} object.
+[\code{matrix}]\cr
+  A matrix including the coefficients along with standard errors,
+  t and p values.
 }
 \description{
 Printing objects of class \code{"cointReg"}.
@@ -42,6 +44,11 @@ print(test.d)
 
 test.im2 = cointRegIM(x = x, y = y, deter = deter)
 print(test.im2)
+
+# The coefficients matrix can be transferred e.g. to LaTeX via xtable:
+if (!require("xtable")) {install.packages("xtable"); library("xtable")}
+xtab = xtable(print(test.fm))
+print.xtable(xtab)
 
 }
 \seealso{
