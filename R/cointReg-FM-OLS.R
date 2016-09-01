@@ -46,14 +46,13 @@
 #' @return [\code{cointReg}]. List with components:
 #' \describe{
 #'   \item{\code{delta} [\code{numeric} | \code{matrix}]}{
-#'     coefficients as vector / matrix}
+#'     coefficients of the deterministics}
 #'
 #'   \item{\code{beta} [\code{numeric} | \code{matrix}]}{
-#'     coefficients as vector / matrix}
+#'     coefficients of the regressors}
 #'
 #'   \item{\code{theta} [\code{numeric} | \code{matrix}]}{
-#'     combined coefficients of
-#'     \code{beta} and \code{delta} as vector / matrix}
+#'     combined coefficients of \code{beta} and \code{delta}}
 #'
 #'   \item{\code{sd.theta} [\code{numeric}]}{
 #'     standard errors for \code{theta}}
