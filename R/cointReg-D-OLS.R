@@ -190,7 +190,6 @@ cointRegD <- function(x, y, deter, kernel = c("ba", "pa", "qs", "tr"),
   theta.d <- theta.d.all[1:(d.k + x.k)]
   delta.d <- theta.d[0:d.k]
   beta.d <- theta.d[(d.k + 1):(d.k + x.k)]
-  names(beta.d) <- names(delta.d) <- names(theta.d) <- NULL
   u.dols <- d.mod$residuals
   u <- matrix(u.dols)
 
@@ -347,7 +346,7 @@ getModD <- function(x, y, deter, n.lag, n.lead, check = FALSE) {
     y.trunc <- ys[(n.lag + 1):(T2 - n.lead), , drop = FALSE]
   }
 
-  dols.mod <- lm(y.trunc ~ all.trunc - 1)
+  dols.mod <- lm(y.trunc ~ . - 1, data = as.data.frame(all.trunc))
   dols.mod$aux <- list(Z = Z, x.delta = x.delta, dx.all = dx.all,
                        all.trunc = all.trunc, y.trunc = y.trunc)
   return(dols.mod)
