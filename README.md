@@ -3,6 +3,7 @@
 Parameter Estimation and Inference in a Cointegrating Regression
 
 [![Travis-CI Build Status](https://travis-ci.org/aschersleben/cointReg.svg?branch=master)](https://travis-ci.org/aschersleben/cointReg)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/aschersleben/cointReg?branch=master&svg=true)](https://ci.appveyor.com/project/aschersleben/cointReg)
 [![CRAN Status Badge](http://www.r-pkg.org/badges/version/cointReg)](https://cran.r-project.org/package=cointReg)
 
 * Installation:
