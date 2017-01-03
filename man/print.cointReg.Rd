@@ -45,10 +45,12 @@ print(test.d)
 test.im2 = cointRegIM(x = x, y = y, deter = deter)
 print(test.im2)
 
+\dontrun{
 # The coefficients matrix can be transferred e.g. to LaTeX via xtable:
 if (!require("xtable")) {install.packages("xtable"); library("xtable")}
 xtab = xtable(print(test.fm))
 print.xtable(xtab)
+}
 
 }
 \seealso{

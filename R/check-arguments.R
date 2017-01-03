@@ -1,6 +1,6 @@
 #' Multiple variable checks for certain values.
 #'
-#' Checking the arguments and convert them for internal use, if necessary.
+#' Check the arguments and convert them for internal use, if necessary.
 #'
 #' @param ... [\code{any}]\cr
 #'   Variables to check, see details.
@@ -27,7 +27,7 @@
 #' test = checkVars(x.coint = x.data, y = y.data, out = "return")
 #' str(test)
 #'
-#' # If the variables already have the "right" name,
+#' # If the variables already have the "right" (= argument's) name,
 #' # there's no need to do something like
 #' # checkVars(kernel = kernel, bandwidth = bandwidth) -
 #' # just call checkVars without specifing the arguments:
@@ -296,6 +296,8 @@ checkObject <- function(obj, obj.name, ..., out = "return", .env) {
 
   if ("return" %in% out) {
     return(invisible(tmp))
+  } else {
+    return(invisible(NULL))
   }
 
 }

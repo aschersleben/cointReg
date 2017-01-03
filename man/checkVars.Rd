@@ -24,7 +24,7 @@ The checked and converted arguments are assigned to
   the given environment (\code{.env}) or invisibly returned as a \code{list}.
 }
 \description{
-Checking the arguments and convert them for internal use, if necessary.
+Check the arguments and convert them for internal use, if necessary.
 }
 \details{
 See \code{\link{checkObject}} for details.
@@ -40,7 +40,7 @@ y
 test = checkVars(x.coint = x.data, y = y.data, out = "return")
 str(test)
 
-# If the variables already have the "right" name,
+# If the variables already have the "right" (= argument's) name,
 # there's no need to do something like
 # checkVars(kernel = kernel, bandwidth = bandwidth) -
 # just call checkVars without specifing the arguments:
